@@ -1,0 +1,241 @@
+/* Declaración de codificación de caracteres */
+@charset "utf-8";
+/* Inicio del Documento CSS */
+
+/* Importación de Google Font "Open Sans" */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
+
+/***************************************************/
+/*  Inicio de definición de estilos para etiquetas */
+/***************************************************/
+
+/* Modificación del comportamiento de las etiquetas html y body */
+
+html, body {
+	margin: 30px;
+	padding:0px;
+	font-size:13px;
+	font-family: Helvetica, sans-serif;
+	background: #00313e;
+	height: auto;
+}
+
+/* Modificación del comportamiento del encabezado 1 */
+h1 {
+	font-size: 50px;
+	color: #f8f8f8;
+	font-family: 'Open Sans', sans-serif;
+}
+
+/* Modificación del comportamiento del encabezado 2 */
+
+h2 {
+	font-size: 40px;
+	color: #f8f8f8;
+	text-decoration: underline;
+	font-family: 'Open Sans', sans-serif;
+}
+
+/* Modificación del comportamiento del encabezado 3 */
+
+h3{
+	font-size: 25px;
+	color: #f8f8f8;
+	font-family: 'Open Sans', sans-serif;
+}
+
+/* Modificación del comportamiento de los párrafos */
+
+p {
+	font-family: 'Open Sans', sans-serif;
+	text-align: justify;
+	font-size: medium;
+	color: #f8f8f8;
+}
+
+/* Modificación del comportamiento de elementos de lista */
+
+li { 
+	font-size: 20px;
+	color: #f8f8f8
+}
+
+/* Modificación del comportamiento de textarea */
+
+textarea {
+    height: 100px;
+	width: 30%;
+  }
+
+/********************************************************************************/
+/*  Inicio de definición de estilos para id y clases usadas en todas las vistas */
+/********************************************************************************/
+
+/* Modificación del comportamiento en header */
+
+#div_header{
+	clear:both;
+	position:relative;
+	background: #00313e;
+	height: auto;
+}
+
+#div_header img{
+	width:100%;
+	height:600px;
+}
+
+/* Div del menú de la página */
+.div_menu {
+	text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+	text-align:center;
+	text-decoration: none;
+	font-family: 'Open Sans', sans-serif;
+	color:white;
+}
+
+/* Estilos comunes de los botones de navegación */
+.boton,.boton:hover,.botonin,.botonin:hover {
+	text-shadow: 2px 1px rgba(0, 0, 0, 0.3);
+	text-align:center;
+	text-decoration: none;
+	display:inline-block;
+	width: 20%;
+	padding: 20px 30px ;
+	font-size: 18px;
+	white-space: nowrap;
+	margin: 5px 5px 10px;
+	border: 1px solid black;
+	border-radius: 2px;
+}
+
+/* Estilos independientes de los botones de navegación */
+.boton{
+	background: #0ab3cc; /* Old browsers */
+	background: -moz-linear-gradient(top, #0ab3cc 0%, #108ba5 44%, #076f83 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #0ab3cc 0%, #108ba5 44%, #076f83 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #0ab3cc 0%, #108ba5 44%, #076f83 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0ab3cc', endColorstr='#076f83',GradientType=0); /* IE6-9 */
+}
+
+.boton:hover{
+	background: #0ab3cc;
+	font-size: 14px;
+}
+
+.botonin {
+    background: rgb(176, 221, 227); /* Old browsers */    
+	background: -moz-linear-gradient(bottom, rgba(176, 221, 227) 0%, rgba(10, 179, 204) 31%, rgba(16, 139, 165) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(bottom, rgba(176, 221, 227) 0%,rgba(10, 179, 204) 31%,rgba(16, 139, 165) 100%); /* Chrome10-25,Safari5.1-6 */    
+	background: linear-gradient(to top, rgba(176, 221, 227) 0%,rgba(10, 179, 204) 31%,rgba(16, 139, 165) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0ab3cc', endColorstr='#108ba5',GradientType=0 ); /* IE6*/
+}
+
+.botonin:hover{
+    background: #0ab3cc;    font-size: 14px;
+}
+
+/* Modificación del comportamiento del footer */
+
+#div_footer {	
+	margin: 8px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 30px;
+	padding-top: 30px;
+	height:200px;
+	font-size:12px;
+	position:relative;
+	clear:both;
+	text-align:center;	
+}
+#div_footer p {
+	text-align: center;
+}
+
+.imagen_redes {
+	width: 150px;
+	height: 150px;
+	padding-left: 120px;
+	padding-right: 120px;
+}
+
+/*Div que contiene los miembros de la banda*/
+
+.contenedor_miembros {
+	display: flex;
+	align-items: center;
+	gap: 40px;
+  }
+  
+  .contenedor_miembros h3 {
+	white-space: nowrap;
+  }
+  .contenedor_miembros img {
+	flex: 3; 
+  }
+  
+  .imagenes_somos {
+	height: auto;
+	max-height: 1000px;
+  }
+
+/****************************************************/
+/*  Inicio de definición de estilos para portfolio  */
+/****************************************************/
+
+  .galeria {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width: 99%;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.641);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.galeria img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.galeria img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(176, 221, 227, 0.791);
+}
+
+/********************************************************/
+/*  Inicio de definición de estilos para el formulario  */
+/********************************************************/
+
+#div_formulario {
+    padding-top: 40px;    text-align: center;
+}
+#div_formulario p {    text-align: center;
+}
+
+#presupuesto { 
+	text-decoration: none;
+}
+
+.boton_form {
+    text-shadow: 2px 1px rgba(0, 0, 0, 0.3);    text-align:center;
+    text-decoration: none;    font-family: 'Open Sans', sans-serif;
+    color:white;    display:inline-block;
+    width: 20%;    padding: 20px 30px ;
+    font-size: 18px;    white-space: nowrap;
+    margin: 5px 5px 10px;    border: 1px solid black;
+    border-radius: 2px;    background: #0ab3cc; /* Old browsers */
+    background: -moz-linear-gradient(top, #0ab3cc 0%, #108ba5 44%, #076f83 100%); /* FF3.6-15 */    
+	background: -webkit-linear-gradient(top, #0ab3cc 0%, #108ba5 44%, #076f83 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #0ab3cc 0%, #108ba5 44%, #076f83 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */    
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0ab3cc', endColorstr='#076f83',GradientType=0); /* IE6-9 */
+}
+
+/***************************************************/
+/*  Inicio de definición de estilos para contacto  */
+/***************************************************/
+
+#mapa {
+	text-align: center;
+}
